@@ -54,9 +54,9 @@ p{
     position: relative;
     z-index: 1;
 }
-/* #hero::after{  selector inserts something after the content of each selected element(s)   
+#hero::after{  /*selector inserts something after the content of each selected element(s)   */
     position: absolute;
-    content: '';  lalagyan lang ng content
+    content: '';  /*lalagyan lang ng content*/
     left: 0;
     right: 0;
     height: 100%;
@@ -64,7 +64,7 @@ p{
     background-color: black;
     opacity: 0; 
     z-index: -1;
-} */
+}
 
 #hero h1:nth-child(1){
     animation-delay: 1.2s;
@@ -90,8 +90,8 @@ p{
     /* margin: auto; kapag gigitna mo ang text sa loob ng container */
     display: block;
     width: fit-content; /*the box will use the available space, but never more than max-content */
-    font-size: 4rem;
     position: relative;
+    font-size: 4rem;
     color: white;
     color: transparent;
     animation: text-reveal .2s ease forwards;
@@ -212,7 +212,30 @@ p{
 .project-item
 .project-info
 
-#projects 
+#projects .projects{
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+#projects .projects-header h1{
+    margin-bottom: 50px;
+}
+#projects .all-projects{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#projects .project-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 80%;
+    margin: 20px auto;
+    overflow: hidden;
+}
 
 /* ------------------------END OF PROJECT SECTION */
 
